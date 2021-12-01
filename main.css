@@ -1,0 +1,270 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    height: 192px;
+    margin-left: -7px;
+    margin-top: 20px;
+    width:100%;
+}
+
+.hamburger{
+    height: 100px;
+    width: 8%;
+    background: transparent;
+    border: none;
+    margin-left: auto;
+    vertical-align: middle;
+    margin-top: 3rem;
+    margin-right: 1rem;
+}
+.hamburger:focus{
+outline: none;
+}
+
+.hamburger__bar{
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    display: block;
+    margin: 0.6rem 0;
+}
+nav{
+    position:fixed;
+    left:-111%;
+    bottom:0;
+    width:100%;
+    padding:90px 30px 30px;
+    transition: all 0.75s ease;
+  }
+.mobile-nav a{
+    display:block;
+    text-decoration:none;
+    padding:10px;
+    color:white;
+    font-weight:bolder;
+    transition: all ease 0.25s;
+    text-align: center;
+    }
+  nav.open{
+    left:-765px;
+  }
+
+.mobile-nav__item--cta{
+    vertical-align: middle;
+    display: flex;
+    position: relative;
+}
+.mobile-nav {
+    z-index: 101;
+    top: 11.8rem;
+    left:-50px;
+    background: goldenrod;
+    max-height: 27vh;
+    width: 100%;
+}
+
+/*.mobile-nav__item a{
+    color:white;
+}*/
+.mobile-nav__items {
+     list-style: none;
+   }
+/*.main-nav__item{
+    list-style: none;
+    padding-top: 53px;
+    color: black;
+}
+*/
+.main-image{
+    width: 100%;
+}
+.section-title{
+    text-align: center;
+    font-family: 'Ephesis', cursive;
+    margin-top: 4rem;
+    font-size: 2.5rem;
+    background: goldenrod;
+}
+.blog{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.blog-image{
+   width: 80%;
+}
+.follow{
+    text-align: center;
+}
+.data-field{
+    text-align: center;
+    background: goldenrod;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+.data-field-fill{
+    width: 36%;
+    height: 1.50rem;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 20px;
+    margin: auto 1.3px;
+}
+.key-blog-image{
+    box-shadow: 2px 2px 2px 2px rgb(218 165 32);
+    margin: auto;
+    padding: 0.5rem;
+    height: 310px;
+    width:auto;
+    }
+
+.key-feature{
+    list-style: none;
+    display: inline-block;
+}
+.key-feature__description{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 2.7rem;
+}
+
+.key-feature__description a{
+    color: black;
+    text-decoration: none;
+}
+.main-info{
+    width: 100%;
+    background-color: goldenrod;
+}
+.text-foot{
+    margin: 10px;
+    text-align: justify;
+    font-size: .8rem;
+    padding: 4.5rem;
+}
+input[type="checkbox" i]{
+    height: 30px;
+    width: 40px;
+    margin-left: 0 2px;
+    margin: 0 2px;
+}
+.checkbox-foot{
+    font-size: 1.3rem;
+    vertical-align: justify;
+    text-align: center;
+    padding: .5rem;
+}
+.terms{
+    color: black;
+    text-decoration: auto;
+}
+.info-footer{
+    padding: 2.5rem;
+    font-size: 0.6rem;
+    text-align: center;
+}
+.heart-icon img{
+    height: 55px;
+    vertical-align: middle;
+    padding-bottom: 11px;
+}
+.key-feature__list{
+    text-align: center;
+    margin-top: 4rem;
+}
+.main-footer__link img{
+    height: 45px;
+}
+.main-footer__link{
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    display: inline-flex;
+}
+.social-media{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.logo-footer{
+    height: 13rem;
+}
+
+@media only screen and (max-width: 400px){
+    .key-blog-image{
+                max-width: 380px;
+            }
+    .main-image{
+        max-width: 320px;
+    }
+        }
+
+@media only screen and (min-width: 600px){
+.key-blog-image{
+            max-width: 470px;
+        }
+.main-image{
+    background-size:contain;
+}
+    }
+
+    @media only screen and (min-width: 700px){
+        #plans{
+            justify-content: center;
+        }
+        .main-header{
+            position: fixed;
+            background-color: white;
+            top: 0;
+            box-shadow: 0 4px 5px -2px grey;
+            width: 100%;
+            z-index: 10;
+        }
+        .images{
+            display: flex;
+            justify-content: center;
+        }
+        .plan__annotation{
+        font-size: 3rem;
+        text-align: center;
+        }
+        .main-image{
+        background-size:contain;
+        }
+        /*.mobile-nav,*/
+        .hamburger{
+            display: none;
+        }
+        .blog{
+            margin-top: 2rem;
+        }
+        .mobile-nav{
+        display: inline-block;
+        top: 0;
+        background: transparent;
+        }
+        .mobile-nav a{
+            color: black;
+            padding: 0px 50px;
+        }
+        nav.open{
+            left: 0;
+        }
+        .mobile-nav__items{
+            display:flex;
+            margin: auto;
+            justify-content: center;
+        }
+        .mobile-nav__item{
+            margin: 1rem;
+        }
+        .key-feature__description{
+            font-size: 1.7rem;
+        }
+        }
