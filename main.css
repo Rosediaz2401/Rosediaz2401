@@ -49,7 +49,7 @@ nav{
     text-align: center;
     }
   nav.open{
-    left:-765px;
+    left: -120%;
   }
 
 .mobile-nav__item--cta{
@@ -61,9 +61,10 @@ nav{
     z-index: 101;
     top: 11.8rem;
     left:-50px;
-    background: goldenrod;
-    max-height: 27vh;
+    background: url(imagenes/black.jpg);
+    max-height: 216px;
     width: 100%;
+    background-position: top;
 }
 
 /*.mobile-nav__item a{
@@ -81,12 +82,19 @@ nav{
 .main-image{
     width: 100%;
 }
+.plan__annotation{
+    text-align: center;
+}
 .section-title{
     text-align: center;
     font-family: 'Ephesis', cursive;
     margin-top: 4rem;
     font-size: 2.5rem;
-    background: goldenrod;
+    background: url(imagenes/black.jpg);
+    color: white;
+    background-position: right;
+    height: 150px;
+    padding-top: 3rem;
 }
 .blog{
     display: block;
@@ -95,23 +103,25 @@ nav{
     margin: 0.5rem;
 }
 .blog-image{
-   width: 80%;
+   height: 250px;
 }
 .follow{
     text-align: center;
 }
 .data-field{
     text-align: center;
-    background: goldenrod;
+    background: url(imagenes/black.jpg);
     padding: 1rem;
     padding-bottom: 2rem;
+    color: white;
+    background-position: right;
 }
 .data-field-fill{
     width: 36%;
     height: 1.50rem;
     vertical-align: middle;
     display: inline-block;
-    font-size: 20px;
+    font-size: 14px;
     margin: auto 1.3px;
 }
 .key-blog-image{
@@ -187,6 +197,13 @@ input[type="checkbox" i]{
     font-size: 2rem;
     display: inline-flex;
 }
+.link-a img{
+    padding-bottom: 0px;
+    margin-bottom: -9px;
+}
+.link-b img{
+    height: 30px;
+}
 .social-media{
     display: inline-block;
     text-align: center;
@@ -214,7 +231,13 @@ input[type="checkbox" i]{
 }
     }
 
-    @media only screen and (min-width: 700px){
+    @media only screen and (min-width: 880px){
+    .mobile-nav{
+        display:none;
+    }
+}
+
+    @media only screen and (min-width: 900px){
         #plans{
             justify-content: center;
         }
@@ -246,8 +269,14 @@ input[type="checkbox" i]{
         }
         .mobile-nav{
         display: inline-block;
-        top: 0;
+        top: -1rem;
         background: transparent;
+        transition: none;
+        left: 0;
+        background:transparent;
+        }
+        nav{
+            transition: none;
         }
         .mobile-nav a{
             color: black;
@@ -256,15 +285,25 @@ input[type="checkbox" i]{
         nav.open{
             left: 0;
         }
+        .section-title{
+            height: 74px;
+            background-position: top;
+            padding-top: 2rem;
+        }
         .mobile-nav__items{
             display:flex;
             margin: auto;
             justify-content: center;
+            transition: none;
         }
         .mobile-nav__item{
             margin: 1rem;
+            font-weight: bolder;
         }
         .key-feature__description{
             font-size: 1.7rem;
         }
+        .data-field{
+            background-position: top;
         }
+    }
