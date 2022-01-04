@@ -39,7 +39,7 @@ outline: none;
 }
 .mobile-nav {
     z-index: 101;
-    top: 4rem;
+    top: 4.6rem;
     background: url(imagenes/black.jpg);
     max-height: 216px;
     width: 100%;
@@ -78,13 +78,13 @@ nav{
 }
 .section-title{
     text-align: center;
-    font-family: 'Ephesis', cursive;
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 20px;
     background: url(imagenes/black.jpg);
     color: white;
     background-position: right;
-    height: 150px;
+    height: 115px;
+    padding-top: 54px;
 }
 .blog{
     display: block;
@@ -108,12 +108,11 @@ nav{
     background-position: right;
 }
 .data-field-fill{
-    width: 36%;
-    height: 1.50rem;
-    vertical-align: middle;
-    display: inline-block;
+    width: 90%;
+    height: 1.5rem;
+    display: block;
     font-size: 10px;
-    margin: auto 1.3px;
+    margin: 12px auto;
 }
 .key-blog-image{
     box-shadow: 2px 2px 2px 2px rgb(218 165 32);
@@ -177,12 +176,12 @@ input[type="checkbox" i]{
 }
 .key-feature__list{
     text-align: center;
-    margin-top: 2rem;
-    padding-left: 40px;
+    margin: auto;
     width: 80%;
+    padding-left: 0;
 }
 .main-footer__link img{
-    height: 45px;
+    height: 35px;
 }
 .main-footer__link{
     margin: 5px;
@@ -196,7 +195,8 @@ input[type="checkbox" i]{
     margin-bottom: -9px;
 }
 .link-b img{
-    height: 30px;
+    height: 22px;
+    margin-bottom: -2px;
 }
 .social-media{
     display: flex;
@@ -207,11 +207,15 @@ input[type="checkbox" i]{
 .logo-footer{
     height: auto;
     width: 10%;
+    margin-top: 15px;
 }
 
 @media only screen and (min-width: 400px){
     .mobile-nav{
-        top:4.8rem;
+        top:5.5rem;
+    }
+    .data-field-fill{
+        font-size: 13px;
     }
 }
 @media only screen and (min-width: 500px){
@@ -219,15 +223,18 @@ input[type="checkbox" i]{
     width: 22%;
 }
 .mobile-nav{
-    top: 5.5rem;
+    top: 6.1rem;
     left: -9%;
+}
+.logo-footer{
+    width: 20%;
 }
         }
 
 @media only screen and (min-width: 600px){
 .mobile-nav{
         left: -7%;
-        top: 4.5rem;
+        top: 5.7rem;
         }
 .logo{
     width: 20%;
@@ -241,6 +248,9 @@ input[type="checkbox" i]{
 .images{
     display: flex;
 }
+.section-title{
+    font-size: 30px;
+}
     }
 @media only screen and (min-width: 700px){
 
@@ -248,12 +258,76 @@ input[type="checkbox" i]{
     background-size:cover;
     }
 .mobile-nav{
-    top: 6rem;
+    top: 6.3rem;
     }
 }
-@media only screen and (min-width: 850px){
+
+.key-feature__list{
+    margin: auto;
+}
+@media only screen and (min-width: 800px){
     .mobile-nav{
         display:none;
+    }
+    .hamburger{
+        display: none;
+    }
+    .main-header{
+        background-color: white;
+        top: 0;
+        box-shadow: 0 4px 5px -2px grey;
+        width: 100%;
+        z-index: 10;
+        margin: 8px 0;
+        position: sticky;
+    }
+    .logo{
+        padding: 10px;
+    }
+    .mobile-nav{
+        display: flex;
+        top: -8rem;
+        background: transparent;
+        transition: none;
+        left: 0;
+        background:transparent;
+        }
+    .mobile-nav__items {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        transition: none;
+    }
+    nav{
+        transition: none;
+    }
+    .mobile-nav a{
+        color: black;
+        padding: 0px 50px;
+    }
+    nav.open{
+        left: 0;
+    }
+    .plan__price{
+        font-size: 22px;
+    }
+    .key-feature__list{
+        display: flex;
+        margin: auto;
+    }
+    .key-feature__description{
+        font-size: 22px;
+    }
+    .data-field-fill{
+        width: 46%;
+        display: inline-flex;
+        margin: 12px 5px;
+    }
+    .follow{
+        font-size: 19px;
+    }
+    .logo-footer{
+        width: 20%;
     }
 }
 
@@ -262,12 +336,13 @@ input[type="checkbox" i]{
             justify-content: center;
         }
         .main-header{
-            position: fixed;
+            position: sticky;
             background-color: white;
             top: 0;
             box-shadow: 0 4px 5px -2px grey;
             width: 100%;
             z-index: 10;
+            margin: 0%;
         }
         .images{
             display: flex;
@@ -280,7 +355,6 @@ input[type="checkbox" i]{
         .main-image{
         background-size:contain;
         }
-        /*.mobile-nav,*/
         .hamburger{
             display: none;
         }
@@ -288,8 +362,7 @@ input[type="checkbox" i]{
             margin-top: 2rem;
         }
         .mobile-nav{
-        display: inline-block;
-        top: -1rem;
+        display: flex;
         background: transparent;
         transition: none;
         left: 0;
@@ -325,5 +398,10 @@ input[type="checkbox" i]{
         }
         .data-field{
             background-position: top;
+        }
+    }
+    @media only screen and (min-width: 1200px){
+        .logo{
+            width: 14%;
         }
     }
