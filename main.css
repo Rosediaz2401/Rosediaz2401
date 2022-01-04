@@ -314,6 +314,7 @@ input[type="checkbox" i]{
     .key-feature__list{
         display: flex;
         margin: auto;
+        justify-content: center;
     }
     .key-feature__description{
         font-size: 22px;
@@ -404,4 +405,9 @@ input[type="checkbox" i]{
         .logo{
             width: 14%;
         }
+        .key-feature__list{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+    }
     }
