@@ -269,6 +269,9 @@ input[type="checkbox" i]{
     .mobile-nav{
         display:none;
     }
+    nav.open{
+        transform: translate(0);
+    }
     .hamburger{
         display: none;
     }
